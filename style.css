@@ -1,0 +1,162 @@
+body{
+font-family:Arial;
+margin:0;
+background:linear-gradient(120deg,#5a3e2b,#a47148,#d8b08c);
+color:#2b1d14;
+}
+
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#4b2e1f;
+color:white;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#ffb366;
+}
+
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero-img{
+width:160px;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero span{
+color:#ff8c42;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#ff8c42;
+color:white;
+border-radius:8px;
+margin-top:20px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+
+.skills{
+padding:80px 10%;
+text-align:center;
+}
+
+.skill-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,0.4);
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* CONTACT */
+
+#contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.social a{
+margin:10px;
+padding:10px 15px;
+background:#c96a2d;
+color:white;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social a:hover{
+background:#ff8c42;
+transform:scale(1.1);
+}
+
+
+footer{
+text-align:center;
+padding:20px;
+background:#4b2e1f;
+color:white;
+}
+
+.dark-mode{
+background:linear-gradient(120deg,#1a1a1a,#2b2b2b,#3a3a3a);
+color:#f5f5f5;
+}
+
+.dark-mode .navbar{
+background:#111;
+}
+
+.dark-mode .card{
+background:rgba(255,255,255,0.1);
+}
+
+#theme-toggle{
+background:#ff8c42;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+color:white;
+}
+
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+transition:0.3s;
+}
+
+.navbar.scrolled{
+background:#2b1d14;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+padding:15px 10%;
+}
